@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  overflow-x: hidden;
+}
+
+p {
+  font-weight: 400;
+}
+
+h2 {
+  padding: 20px;
+}
+
+header {
+  z-index: 1024;
+  position: relative;
+}
+
+label {
+  font-weight: 400;
+}
+
+.inputField {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.navStart {
+  padding: 20px;
+  position: fixed;
+  background-color: #ffffff;
+  left: 0;
+  right: 0;
+}
+
+.headerLogo {
+  font-weight: 500;
+  font-size: 28px;
+  padding-left: 30px;
+}
+
+.navigationAction {
+  font-weight: 400;
+  font-size: 17px;
+  padding: 0px 14px;
+}
+
+.navigationActionRight {
+  font-weight: 400;
+  font-size: 17px;
+}
+#navbarNavDropdown {
+  justify-content: space-between;
+}
+.bannerImg {
+  background-image: url(./assets/img/backgroundimg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  position: relative;
+}
+.primaryHeading {
+  font-weight: 900;
+  font-size: 60px;
+}
+
+.bannerCotent {
+  font-weight: 500;
+  z-index: 200;
+  position: relative;
+  margin-top: 100px;
+}
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+  /* background-color: black; */
+  background: rgb(0, 0, 0);
+  /* background: linear-gradient(
+    160deg,
+    rgba(130, 255, 245, 0.896796218487395) 0%,
+    rgba(42, 224, 216, 0.5074404761904762) 41%,
+    rgba(34, 163, 171, 1) 76%
+  ); */
+  opacity: 0.2;
+}
+.iconStyle {
+  font-size: 25px;
+}
+.iconColor {
+  color: rgb(107, 235, 150);
+}
+a,
+a:hover {
+  text-decoration: none !important;
+  color: black !important;
+}
+footer,
+section {
+  padding: 70px 0px;
+  background-color: #f4f8fd;
+}
+.sectionTop {
+  padding-top: 5%;
+  background-color: #fff;
+}
+footer {
+  background-color: #fff;
+}
+footer ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.aboutContent {
+  padding-left: 25px;
+}
+.secHeading {
+  font-size: 19px;
+  font-weight: 400;
+}
+.sectionHeading {
+  font-size: 25px;
+  font-weight: 800;
+}
+.primaryBtn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  border-bottom: 1px solid;
+  padding: 10px;
+  transition: 0.3s linear;
+}
+.primaryBtn:hover {
+  background-color: rgb(43, 159, 226);
+  color: #fff !important;
+  border-bottom: none;
+}
+.footerHeading {
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+.footerLinks {
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+.socailMediaIcons i {
+  padding: 5px;
+}
+.missionBackground {
+  background-image: url(./assets/img/mission.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+}
+.motivate {
+  background-color: #fff;
+}
+.motivateContent {
+  background-color: #f4f8fd;
+  padding: 50px 30px;
+}
+.motivateImage {
+  max-width: 255px;
+  max-height: 255px;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.marketPoints {
+  padding-top: 50px;
+}
+.serialColor {
+  font-size: 20px;
+  color: blue;
+}
+.z-99 {
+  z-index: 99;
+}
+
+.service {
+  background-color: #fff;
+}
+.serviceText {
+  flex-shrink: 0;
+}
+.serviceDetail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+.serviceDetail::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 100%;
+  background: black;
+  right: 0;
+}
+
+.noRightBar::before {
+  display: none;
+}
+
+.login {
+  padding: 30px;
+}
+
+.credentialPanel {
+  background-color: #fff;
+  padding: 5%;
+}
+
+.contactHeading {
+  font-weight: 800;
+  font-size: 70px;
+  padding-top: 20px;
+  text-align: center;
+}
+.contactDetails {
+  background-color: aquamarine;
+  padding: 60px 40px;
+}
+.leftContact {
+  display: flex;
+  align-items: center;
+}
+
+/* Tab Screen */
+@media only screen and (max-width: 767px) {
+  .serviceDetail::before {
+    display: none;
+  }
+}
+/* Mobile Screen */
+@media only screen and (max-width: 576px) {
+  .primaryHeading {
+    font-size: 22px;
+  }
+  .serviceDetail::before {
+    display: none;
+  }
+}
+/* credential */
+@media only screen and (max-width: 900px) {
+  .sectionTop {
+    padding-top: 120px;
+  }
+}
